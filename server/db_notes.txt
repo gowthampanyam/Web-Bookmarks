@@ -1,0 +1,12 @@
+MySQL database initialization:
+CREATE TABLE category ( id int NOT NULL AUTO_INCREMENT, name varchar(255) NOT NULL, description text, PRIMARY KEY (id) );
+
+CREATE TABLE tag ( id int NOT NULL AUTO_INCREMENT, name varchar(255) NOT NULL, PRIMARY KEY (id) );
+
+CREATE TABLE user ( id int NOT NULL AUTO_INCREMENT, username varchar(32), password varchar(128), role varchar(10), enabled int, PRIMARY KEY (id) );
+
+CREATE TABLE website ( id int NOT NULL AUTO_INCREMENT, name varchar(255) NOT NULL, description text, url varchar(255) NOT NULL, PRIMARY KEY (id) );
+
+CREATE TABLE website_category ( website_id int NOT NULL, category_id int NOT NULL, PRIMARY KEY (website_id, category_id), FOREIGN KEY (website_id) REFERENCES website(id), FOREIGN KEY (category_id) REFERENCES category(id) );
+
+CREATE TABLE website_tag ( website_id int NOT NULL, tag_id int NOT NULL, PRIMARY KEY (website_id, tag_id), FOREIGN KEY (website_id) REFERENCES website(id), FOREIGN KEY (tag_id) REFERENCES tag(id) );

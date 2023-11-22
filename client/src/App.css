@@ -1,0 +1,76 @@
+:root {
+    --color1: #27496D;
+    --color2: #0C7B93;
+    --color3: #00A8CC;
+
+    --color1-o: #D8B692;
+    --color2-o: #F3846C;
+    --color3-o: #FF5433;
+
+}
+
+
+
+
+
+.search-form {
+    width: 500px;
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.category-badge {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.bg-canvas {
+    position: fixed;
+    z-index: -1;
+}
+
+body {
+    background: linear-gradient(0deg, #000000, var(--color2)20%, var(--color1) 50%, #000000 90%);
+    min-height: 100vh;
+}
+
+.navigation {
+    background: linear-gradient(to bottom, var(--color1), #000000);
+    height: 8vh;
+}
+
+
+.btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source: var(--gradient) !important;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    border: 5px solid #fff !important;
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+}
+
+.nav-login {
+    color: #FFFFFF;
+
+}
+
+.logout-btn {
+    margin-right: 1.25rem !important;
+}

@@ -1,0 +1,112 @@
+:root {
+    --gradient: linear-gradient(to left top, var(--color1) 10%, var(--color3) 90%) !important;
+}
+
+
+
+.card {
+    background: #222;
+    border: 1px solid var(--color1);
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+
+
+}
+
+
+
+.card-body {
+    background: #222;
+}
+
+
+
+
+
+.brand {
+    background: linear-gradient(to left bottom, var(--color2) 10%, var(--color3) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.brand:hover {
+    background: linear-gradient(to left bottom, var(--color2-o) 10%, var(--color3-o) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+
+.default-tag {
+    background: linear-gradient(to left bottom, var(--color3) 10%, var(--color2) 90%);
+}
+
+.default-tag:hover {
+    color: black !important;
+}
+
+.selected-tag {
+    background: linear-gradient(to left bottom, var(--color2-o) 10%, var(--color3-o) 90%);
+    color: black !important;
+}
+
+.selected-tag:hover {
+    color: white !important;
+}
+
+.default-category {
+    background: linear-gradient(to left bottom, var(--color1) 10%, var(--color3) 90%);
+
+}
+
+.default-category:hover {
+    color: #222;
+}
+
+.selected-category {
+    background: linear-gradient(to left bottom, var(--color3-o) 10%, var(--color1-o) 90%);
+    color: white;
+}
+
+.selected-category:hover {
+    color: #222;
+}
+
+.add-button {
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+    background: linear-gradient(to left bottom, var(--color3-o) 10%, var(--color1-o) 90%);
+}
+
+.add-button-pressed {
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+    background: linear-gradient(to left bottom, var(--color3) 10%, var(--color1) 90%);
+}
+
+.add-button:hover {
+    background: linear-gradient(to left bottom, var(--color3) 10%, var(--color1) 90%);
+}
+
+.website-container {
+    overflow-y: auto;
+    max-height: 70vh;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+}
+
+.website-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.website-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.website-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}

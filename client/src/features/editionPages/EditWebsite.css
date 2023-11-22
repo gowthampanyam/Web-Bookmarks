@@ -1,0 +1,8 @@
+.edit-website-page {
+    color: var(--color3);
+}
+
+.info-text {
+    color: var(--color3) !important;
+    font-size: 20px !important;
+}
